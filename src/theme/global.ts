@@ -1,9 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 import { getTheme } from 'styled-toolset';
+import typography from './typography';
 
 const white = getTheme('colors.primary');
 const black = getTheme('colors.secondary');
-const fonts = getTheme('fonts.sanFrancisco');
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${white};
     color: ${black};
-    font-family: ${fonts}, sans-serif;
   }
+
+  ${typography}
 `;
