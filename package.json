@@ -1,63 +1,68 @@
 {
-  "name": "template-next",
-  "version": "0.1.0",
-  "private": true,
-  "lint-staged": {
-    "*.{ts,js}": [
-      "yarn run:prettier",
-      "yarn lint",
-      "git add ."
-    ]
-  },
+	"name": "template-next",
+	"version": "0.1.0",
+	"private": true,
+	"lint-staged": {
+		"*.{ts,js}": [
+			"yarn run:prettier",
+			"yarn lint",
+			"git add ."
+		]
+	},
 	"husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn test && lint-staged"
-    }
-  },
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint 'src/**/*.{ts,tsx}' --fix",
-    "run:prettier": "prettier --config ./.prettierrc.js --write \"**/*.{ts,tsx}\""
-  },
-  "dependencies": {
-    "next": "10.0.7",
-    "next-images": "^1.7.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "styled-components": "^5.2.1",
-    "styled-toolset": "^1.1.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "@testing-library/react": "^11.2.5",
-    "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.28",
-    "@types/react": "^17.0.2",
-    "@types/styled-components": "^5.1.7",
-    "@typescript-eslint/eslint-plugin": "^4.15.1",
-    "@typescript-eslint/parser": "^4.15.1",
-    "babel-jest": "^26.6.3",
-    "babel-plugin-inline-svg": "^1.2.0",
-    "eslint": "^7.20.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^5.0.9",
-    "jest": "^26.6.3",
-    "jest-dom": "^4.0.0",
-    "jest-environment-jsdom-fifteen": "^1.0.2",
-    "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1",
-    "react-test-renderer": "^17.0.1",
-    "typescript": "^4.1.5"
-  }
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+			"pre-commit": "yarn test && lint-staged"
+		}
+	},
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "eslint 'src/**/*.{ts,tsx}' --fix",
+		"run:prettier": "prettier --config ./.prettierrc.js --write \"**/*.{ts,tsx}\"",
+		"apollo:compile": "apollo codegen:generate --localSchemaFile=graphql/schema.json --target=typescript",
+		"download:schema": "apollo client:download-schema ./graphql/schema.graphql"
+	},
+	"dependencies": {
+		"@apollo/client": "^3.3.21",
+		"framer-motion": "^4.1.17",
+		"next": "10.0.7",
+		"next-images": "^1.8.1",
+		"react": "17.0.1",
+		"react-dom": "17.0.1",
+		"styled-components": "^5.2.1",
+		"styled-toolset": "^1.1.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.12.16",
+		"@commitlint/cli": "^11.0.0",
+		"@commitlint/config-conventional": "^11.0.0",
+		"@testing-library/react": "^11.2.5",
+		"@types/jest": "^26.0.20",
+		"@types/node": "^14.14.28",
+		"@types/react": "^17.0.2",
+		"@types/styled-components": "^5.1.7",
+		"@typescript-eslint/eslint-plugin": "^4.15.1",
+		"@typescript-eslint/parser": "^4.15.1",
+		"apollo": "^2.33.4",
+		"babel-jest": "^26.6.3",
+		"babel-plugin-inline-svg": "^1.2.0",
+		"eslint": "^7.20.0",
+		"eslint-config-airbnb": "^18.2.1",
+		"eslint-config-prettier": "^7.2.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-prettier": "^3.3.1",
+		"eslint-plugin-react": "^7.22.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"husky": "^5.0.9",
+		"jest": "^26.6.3",
+		"jest-dom": "^4.0.0",
+		"jest-environment-jsdom-fifteen": "^1.0.2",
+		"lint-staged": "^10.5.4",
+		"prettier": "^2.2.1",
+		"react-test-renderer": "^17.0.1",
+		"typescript": "^4.1.5"
+	}
 }
