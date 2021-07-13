@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# graphql apollo generated types
+__generated__/
