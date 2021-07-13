@@ -15,6 +15,7 @@ export const Link = styled.div`
 	font-family: ${roboto};
 	font-weight: 500;
 	margin-left: 28px;
+	cursor: pointer;
 `;
 
 export const Wrapper = styled.div`
