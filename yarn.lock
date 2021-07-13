@@ -554,6 +554,19 @@
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-11.0.0.tgz#719cf05fcc1abb6533610a2e0f5dd1e61eac14fe"
   integrity sha512-VoNqai1vR5anRF5Tuh/+SWDFk7xi7oMwHrHrbm1BprYXjB2RJsWLhUrStMssDxEl5lW/z3EUdg8RvH/IUBccSQ==
 
+"@contentful/rich-text-html-renderer@^15.0.0":
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/@contentful/rich-text-html-renderer/-/rich-text-html-renderer-15.0.0.tgz#7649251c8e35c762bb2054b7f9f4d32e9211b8e4"
+  integrity sha512-KghVNlMdMAqPZWvfgApiVLqaOyMqkuXgJnRm7LpCULP5d/gogDuqz4h/5emOWW562Lxvxy6jSC8roZXu/yZngg==
+  dependencies:
+    "@contentful/rich-text-types" "^15.0.0"
+    escape-html "^1.0.3"
+
+"@contentful/rich-text-types@^15.0.0":
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-15.0.0.tgz#bd676960dea3e4b5a56fd6653d8cc800a81d6bca"
+  integrity sha512-e7aXF/BhXPOpLW+PsbD57Fyt0meiRYT3nTct2iLGa2WYRZMM6E+clnCAXhSRBQ8qhAso7SSUGeiBMxPeaO3KKQ==
+
 "@emotion/is-prop-valid@^0.8.2", "@emotion/is-prop-valid@^0.8.8":
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz#db28b1c4368a259b60a97311d6a952d4fd01ac1a"
@@ -3751,6 +3764,11 @@ escalade@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.1.1.tgz#d8cfdc7000965c5a0174b4a82eaa5c0552742e40"
   integrity sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==
+
+escape-html@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
+  integrity sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=
 
 escape-string-regexp@1.0.5, escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"

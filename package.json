@@ -21,11 +21,12 @@
 		"start": "next start",
 		"lint": "eslint 'src/**/*.{ts,tsx}' --fix",
 		"run:prettier": "prettier --config ./.prettierrc.js --write \"**/*.{ts,tsx}\"",
-		"apollo:compile": "apollo codegen:generate --localSchemaFile=graphql/schema.json --target=typescript",
-		"download:schema": "apollo client:download-schema ./graphql/schema.graphql"
+		"apollo:compile": "yarn download:schema && apollo codegen:generate --localSchemaFile=graphql/schema.json --target=typescript",
+		"download:schema": "apollo client:download-schema ./graphql/schema.json"
 	},
 	"dependencies": {
 		"@apollo/client": "^3.3.21",
+		"@contentful/rich-text-html-renderer": "^15.0.0",
 		"framer-motion": "^4.1.17",
 		"next": "10.0.7",
 		"next-images": "^1.8.1",
