@@ -42,8 +42,6 @@ export default function Articles() {
 		}
 	);
 
-	console.log('Graphql Response', data?.blogPostCollection?.items[0].postBody);
-
 	return (
 		<Wrapper>
 			<Helmet
