@@ -17,7 +17,7 @@
 	},
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build",
+		"build": "yarn apollo:compile && next build",
 		"start": "next start",
 		"lint": "eslint 'src/**/*.{ts,tsx}' --fix",
 		"run:prettier": "prettier --config ./.prettierrc.js --write \"**/*.{ts,tsx}\"",
