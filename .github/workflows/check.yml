@@ -29,7 +29,7 @@ jobs:
         with:
           cmd: lint
 
-      - name: Typescript Check
+      - name: Apollo GraphQL Check
         uses: borales/actions-yarn/@v2.0.0
         with:
           cmd: apollo:compile
