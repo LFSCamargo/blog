@@ -238,6 +238,7 @@ export const PageDesc = styled.p`
 `;
 
 export const Grid = styled.div`
+	padding-bottom: 200px;
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);

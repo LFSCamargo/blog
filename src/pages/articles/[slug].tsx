@@ -8,8 +8,8 @@ import {
 	Wrapper,
 	CardTagWrapper,
 	CardTitle,
-} from './styles';
-import { ArticleQuery } from './__generated__/ArticleQuery';
+} from '~/styles/articlesStyles';
+import { ArticleQuery } from '~/__generated__/ArticleQuery';
 
 export default function Article() {
 	const { query } = useRouter();
