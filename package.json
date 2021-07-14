@@ -21,7 +21,8 @@
 		"start": "next start",
 		"lint": "eslint 'src/**/*.{ts,tsx}' --fix",
 		"run:prettier": "prettier --config ./.prettierrc.js --write \"**/*.{ts,tsx}\"",
-		"apollo:compile": "yarn download:schema && apollo codegen:generate --localSchemaFile=graphql/schema.json --target=typescript",
+		"apollo:compile:dev": "yarn download:schema && apollo codegen:generate --localSchemaFile=graphql/schema.json --target=typescript",
+		"apollo:compile": "apollo codegen:generate --localSchemaFile=graphql/schema.json --target=typescript",
 		"download:schema": "apollo client:download-schema ./graphql/schema.json"
 	},
 	"dependencies": {

@@ -1,7 +1,7 @@
 import Markdown from 'markdown-to-jsx';
 import { gql, useQuery } from '@apollo/client';
 import { useRouter } from 'next/router';
-import { Content } from '~/components';
+import { Content, Helmet } from '~/components';
 import {
 	BlogPostWrapper,
 	Image,
@@ -25,6 +25,7 @@ export default function Article() {
 						}
 						tag
 						postBody
+						description
 					}
 				}
 			}
@@ -36,11 +37,17 @@ export default function Article() {
 		}
 	);
 
-	const { postBody = '', featuredImage = { url: '' }, tag = '', title = '' } =
-		data?.blogPostCollection.items[0] || {};
+	const {
+		postBody = '',
+		featuredImage = { url: '' },
+		tag = '',
+		title = 'Loading...',
+		description = '',
+	} = data?.blogPostCollection.items[0] || {};
 
 	return (
 		<Wrapper>
+			<Helmet title={title} description={description} />
 			<Content loading={loading}>
 				<BlogPostWrapper>
 					<Image src={featuredImage.url}>
