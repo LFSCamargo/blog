@@ -22,7 +22,7 @@
 		"lint": "eslint 'src/**/*.{ts,tsx}' --fix",
 		"run:prettier": "prettier --config ./.prettierrc.js --write \"**/*.{ts,tsx}\"",
 		"apollo:compile:dev": "yarn download:schema && yarn apollo:compile",
-		"apollo:compile": "apollo codegen:generate --target=typescript src/__generated__/ --outputflat",
+		"apollo:compile": "apollo codegen:generate --target=typescript src/__generated__/ --outputFlat",
 		"download:schema": "apollo client:download-schema ./graphql/schema.json"
 	},
 	"dependencies": {
