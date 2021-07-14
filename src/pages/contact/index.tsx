@@ -6,7 +6,7 @@ import {
 	AnimationView,
 	PageDesc,
 	AnimationWrapper,
-} from './styles';
+} from '~/styles/contactStyles';
 
 export default function Contact() {
 	return (

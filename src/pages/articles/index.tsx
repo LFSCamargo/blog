@@ -9,11 +9,11 @@ import {
 	AnimationView,
 	PageDesc,
 	Grid,
-} from './styles';
+} from '~/styles/articlesStyles';
 import {
 	ArticlesQuery,
 	ArticlesQueryVariables,
-} from './__generated__/ArticlesQuery';
+} from '~/__generated__/ArticlesQuery';
 
 export default function Articles() {
 	const { push } = useRouter();

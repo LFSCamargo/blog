@@ -6,7 +6,7 @@ import {
 	PicWrapper,
 	ProfilePic,
 	PageDesc,
-} from './styles';
+} from '~/styles/homeStyles';
 
 export default function Home() {
 	return (

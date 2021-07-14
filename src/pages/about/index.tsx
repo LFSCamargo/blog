@@ -1,8 +1,14 @@
 import { gql, useQuery } from '@apollo/client';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import { Content, Helmet } from '~/components';
-import { Grid, GridWrapper, Wrapper, DataWrapper, Description } from './styles';
-import { AboutQuery } from './__generated__/AboutQuery';
+import {
+	Grid,
+	GridWrapper,
+	Wrapper,
+	DataWrapper,
+	Description,
+} from '~/styles/aboutStyles';
+import { AboutQuery } from '~/__generated__/AboutQuery';
 
 export default function About() {
 	const { data, loading } = useQuery<AboutQuery>(gql`
