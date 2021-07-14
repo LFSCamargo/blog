@@ -15,7 +15,7 @@ export const Helmet: React.FC<HelmetProps> = ({
 	description = '',
 }) => (
 	<Head>
-		<title>{title}</title>
+		<title>LFSCamargo | {title}</title>
 		<meta name="description" content={description} />
 	</Head>
 );

@@ -1,6 +1,6 @@
 import { InstagramIcon, LinkedinIcon, TwitterIcon } from '~/assets';
 import { LogoAnimation } from '../Header/animation';
-import { GHIcon, Icon, Wrapper } from './styles';
+import { GHIcon, Icon, Touchable, Wrapper } from './styles';
 
 interface Props {
 	animate?: boolean;
@@ -13,22 +13,24 @@ export function SideBar({ animate }: Props) {
 			initial={LogoAnimation.initial(animate)}
 			animate={LogoAnimation.animate}
 		>
-			<div onClick={() => window.open('https://github.com/LFSCamargo')}>
+			<Touchable onClick={() => window.open('https://github.com/LFSCamargo')}>
 				<GHIcon />
-			</div>
-			<div onClick={() => window.open('https://instagram.com/luiziscodingx')}>
+			</Touchable>
+			<Touchable
+				onClick={() => window.open('https://instagram.com/luiziscodingx')}
+			>
 				<Icon src={InstagramIcon} />
-			</div>
-			<div
+			</Touchable>
+			<Touchable
 				onClick={() =>
 					window.open('https://www.linkedin.com/in/luizfernando-lxspandora/')
 				}
 			>
 				<Icon src={LinkedinIcon} />
-			</div>
-			<div onClick={() => window.open('https://twitter.com/lXSLuizinho')}>
+			</Touchable>
+			<Touchable onClick={() => window.open('https://twitter.com/lXSLuizinho')}>
 				<Icon src={TwitterIcon} />
-			</div>
+			</Touchable>
 		</Wrapper>
 	);
 }

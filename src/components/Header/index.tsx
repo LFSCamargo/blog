@@ -26,8 +26,8 @@ export function Header({ animate = false }: Props) {
 					initial={MenuAnimation.initial(animate)}
 					animate={MenuAnimation.animate}
 				>
-					<Link onClick={() => push('/about')}>about</Link>
 					<Link onClick={() => push('/home')}>home</Link>
+					<Link onClick={() => push('/about')}>about</Link>
 					<Link onClick={() => push('/articles')}>articles</Link>
 					<Link onClick={() => push('/contact')}>contact</Link>
 				</LinksWrapper>

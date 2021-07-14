@@ -33,6 +33,6 @@ export const DataWrapper = styled.div`
 `;
 
 export const Description = styled.p`
-	font-size: ${pxToRem(36)};
+	font-size: ${pxToRem(36)} !important;
 	white-space: pre-line;
 `;

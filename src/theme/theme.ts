@@ -6,8 +6,9 @@ export const theme = {
 		secondary: '#000',
 	},
 	fonts: {
-		playFair: 'Playfair Display',
+		frank: 'Frank Ruhl Libre',
 		roboto: 'Roboto',
+		playFair: 'Playfair Display',
 	},
 	spacing: {
 		xxs: pxToRem(2),

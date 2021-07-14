@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import { pxToRem, getTheme } from 'styled-toolset';
 
 const roboto = getTheme('fonts.roboto');
+const playFair = getTheme('fonts.playFair');
 const extraSpacing = getTheme('spacing.xl');
 
 export const LF = styled.span`
 	font-weight: 900;
 	font-size: ${pxToRem(40)};
+	font-family: ${playFair};
 `;
 
 export const Link = styled.div`

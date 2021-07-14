@@ -21,7 +21,7 @@ export default function About() {
 	return (
 		<Wrapper>
 			<Helmet
-				title="Welcome"
+				title="About"
 				description="This is the template for creating new Projects with NextJS"
 			/>
 			<Content loading={loading}>

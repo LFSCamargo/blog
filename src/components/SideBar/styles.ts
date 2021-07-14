@@ -3,6 +3,13 @@ import styled from 'styled-components';
 import { pxToRem } from 'styled-toolset';
 import { GitHubIcon } from '~/assets';
 
+export const Touchable = styled(motion.div).attrs({
+	whileHover: { scale: 1.3 },
+	whileTap: { scale: 1 },
+})`
+	cursor: pointer;
+`;
+
 export const Wrapper = styled(motion.div)`
 	display: flex;
 	min-width: 41px;
