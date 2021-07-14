@@ -17,7 +17,14 @@ export const Link = styled.div`
 	font-family: ${roboto};
 	font-weight: 500;
 	margin-left: 28px;
+	transition: 0.2s;
 	cursor: pointer;
+	&:hover {
+		transform: scale(1.1);
+	}
+	&:active {
+		transform: scale(1);
+	}
 `;
 
 export const Wrapper = styled.div`

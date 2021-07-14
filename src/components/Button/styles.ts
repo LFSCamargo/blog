@@ -29,9 +29,12 @@ export const Button = styled.button<ButtonProps>`
 	align-items: center;
 	background-color: ${isTransparent(primary, secondary)};
 	color: ${isTransparent(secondary, primary)};
-	transition: 0.4s;
+	transition: 0.2s;
 	cursor: pointer;
+	&:hover {
+		transform: scale(1.1);
+	}
 	&:active {
-		opacity: 0.5;
+		transform: scale(1);
 	}
 `;
